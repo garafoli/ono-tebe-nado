@@ -1,8 +1,8 @@
-/* место для вашего кода */
+/* шапка */
 .header {
     width: 1052px;
     height: 105px;
-    margin: 92px auto 0 auto;
+    margin: 92px auto 96px auto;
     display: flex;
     align-items: center;
     position: relative;
@@ -34,17 +34,21 @@
 .header__links__list {
     display: flex;
     justify-content: space-around;
-    column-gap: 30px;
-    list-style: circle;
+    column-gap: 2vw;
+    list-style: circle outside;
 }
 
 .header__logo {
-    width: 145px;
-    height: 105px;
+    width: 148px;
     display: block;
     margin-left: 454px;
     position: absolute;
 }
+
+.header__logo-image {
+    max-height: 105px;
+}
+
 address {
     margin-left: 786px;
     position: absolute;
@@ -60,3 +64,117 @@ address a {
     border-bottom: 1px solid black;
 }
 
+
+
+/* секция "оно тебе надо" */
+.cover {
+    height: 757px;
+    background: url(/images/cover.jpg);
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.cover__title {
+    width: 1000px;
+    margin: 0 auto;
+    padding-top: 165px;
+    font-style: normal;
+    text-transform: uppercase;
+    z-index: 2;
+}
+
+.align-text__1 {
+    line-height: 115px;
+    font-family: raleway;
+    font-weight: 700;
+    font-size: 100px;
+    letter-spacing: 0.3em;
+}
+
+.align-text__2 {
+    line-height: 115px;
+    font-family: raleway;
+    font-weight: 700;
+    font-size: 100px;
+    letter-spacing: 0.6em;
+}
+
+.align-text__center {
+    text-align: center;
+}
+
+.align-text__center__1 {
+    font-family: Raleway;
+    font-size: 100px;
+    font-weight: 700;
+    line-height: 100px;
+    letter-spacing: 0.5em;
+}
+
+.align-text__right {
+    text-align: right;
+}
+
+.align-text__right__1 {
+    font-family: Raleway;
+    font-size: 100px;
+    font-weight: 700;
+    line-height: 100px;
+    letter-spacing: 0.3em;
+}
+
+.align-text__right__2 {
+    font-family: Raleway;
+    font-size: 100px;
+    font-weight: 700;
+    line-height: 100px;
+    letter-spacing: 0;
+}
+
+.cover__description {
+    display: flex;
+    align-items: center;
+    margin-top: 147px;
+    margin-left: 78px;
+    padding-bottom: 51px;
+    z-index: 2;
+}
+.cover__description-text > h2 {
+    font-family: Raleway;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 28px;
+    text-transform: uppercase;
+    word-spacing: 18.5px;
+}
+.bet__button > button {
+    width: 256px;
+    height: 51px;
+    margin-left: 79px;
+    background: transparent;
+    border-style: none;
+    border: 1px solid white;
+    font-family: Raleway;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: white;
+}
+
+.bet__button :hover {
+    cursor: pointer;
+    color: rgb(201, 195, 186);
+}
+
+.overlay {
+    width: 1100px;
+    height: 757px;
+    position:absolute;
+    top: 293px;
+    background-color: rgb(0, 0, 0, 0.5);
+    z-index: 1;
+}
