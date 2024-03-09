@@ -4,15 +4,15 @@
     height: 105px;
     display: flex;
     align-items: center;
-    position: relative;
     color: rgb(0 0 0 1);
-    font-family: raleway;
     font-weight: 400;
     font-size: 18px;
+    line-height: 21px;
+    margin: auto;
 }
 
 .header__menu {
-    margin-left: 24px;
+    margin-left: 26.52px;
 }
 
 .header__links-list-item_no-bullit {
@@ -26,31 +26,35 @@
 .header__links-list-item a {
     text-decoration: none;
     border-bottom: 1px solid black;
-    line-height: 24.3px;
 }
 
 .header__links__list {
     display: flex;
     justify-content: space-around;
-    column-gap: 2vw;
-    list-style: circle outside;
+    column-gap: 35px;
+    list-style: circle;
 }
 
 .header__logo {
     width: 148px;
     display: block;
+    background-size: cover;
     margin-left: 454px;
+    align-items: center;
     position: absolute;
 }
 
 .header__logo-image {
+    width: 148px;
     max-height: 105px;
+    cursor: pointer;
 }
 
 address {
-    margin-left: 786px;
+    display: block;
+    min-width: 205px;
     position: absolute;
-    font-family: raleway;
+    margin-left: 785px;
     font-weight: 400;
     font-size: 18px;
     font-style: normal;
@@ -179,11 +183,10 @@ address a {
 
 .lots {
     width: 1052px;
-    margin: 0 auto;
+    margin: auto;
 }
 
 .lots__heading {
-    font-family: Raleway;
     font-size: 40px;
     font-weight: 700;
     text-transform: uppercase;
@@ -198,6 +201,11 @@ address a {
     justify-content: space-between;
     list-style: none;
 }
+.lots > ul {
+    margin-top: 27px;
+    flex-wrap: wrap;
+    row-gap: 25px;
+}
 
 .lots__card-list > .overlay {
     cursor: pointer;
@@ -206,14 +214,14 @@ address a {
 .lots__card-list > a {
     display: block;
     width: 334px;
-    height: 563px;
+    min-height: 563px;
     text-decoration: none;
     z-index: 2;
     text-align: left;
+    flex-grow: 1;
 }
 
 .card {
-    /* height: 100%; */
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -255,4 +263,66 @@ address a {
     font-size: 20px;
     font-weight: 400;
     line-height: 120%;
+}
+
+.lots__look-more-link {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23px;
+    margin: 30px 0 0 40px;
+}
+
+.lots__look-more-link > a {
+    text-decoration: none;
+    border-bottom: 1px solid black;
+}
+
+/* Об аукционе */
+
+.about {
+    width: 1052px;
+    margin: 0 auto;
+    padding-right: 5px;
+    display: grid;
+    grid-template-columns: 334px 1fr;
+    grid-template-rows: auto;
+    column-gap: 24px;
+}
+
+.about__logo {
+    width: 240px;
+    height: 240px;
+    background-color: rgb(0, 0, 0, 1);
+    border-radius: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about__logo > img {
+    width: 141.54px;
+    height: 112.55px;
+}
+
+.about__title {
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 47px;
+    align-self: center;
+}
+
+.about__text {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.about__text__1 {
+    margin-top: 8px;
+}
+
+.about__text__2 {
+    margin-top: 24px;
 }
