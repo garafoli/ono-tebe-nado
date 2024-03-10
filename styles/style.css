@@ -8,7 +8,7 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
-    margin: auto;
+    margin: 92px auto 0 auto;
 }
 
 .header__menu {
@@ -78,12 +78,13 @@ address a {
     display: flex;
     flex-direction: column;
     position: relative;
+    margin-top: 96px;
 }
 
 .overlay {
     position:absolute;
     inset: 0;
-    background-color: rgb(0, 0, 0, 0.5);
+    background-color: rgb(0, 0, 0, 0.6);
     z-index: 1;
 }
 
@@ -176,14 +177,13 @@ address a {
 
 .bet__button :hover {
     cursor: pointer;
-    color: rgb(201, 195, 186);
 }
 
 /* Карточки */
 
 .lots {
     width: 1052px;
-    margin: auto;
+    margin: 179px auto 0 auto;
 }
 
 .lots__heading {
@@ -192,7 +192,6 @@ address a {
     text-transform: uppercase;
     line-height: 47px;
     padding-left: 40px;
-
 }
 
 .lots__card-list {
@@ -249,13 +248,15 @@ address a {
 }
 
 .card__title {
-    font-family: Raleway;
     font-size: 22px;
     font-weight: 700;
-    line-height: 120%;
+    line-height: 26.4px;
     font-style: normal;
     text-transform: uppercase;
     text-decoration-line: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+
 }
 
 .card__text {
@@ -281,7 +282,7 @@ address a {
 
 .about {
     width: 1052px;
-    margin: 0 auto;
+    margin: 181px auto 0 auto;
     padding-right: 5px;
     display: grid;
     grid-template-columns: 334px 1fr;
@@ -325,4 +326,62 @@ address a {
 
 .about__text__2 {
     margin-top: 24px;
+}
+
+/* ПОДВАЛ */
+
+.footer {
+        width: 1000px;
+        display: flex;
+        position: relative;
+        color: rgb(0 0 0 1);
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+        margin: 180px auto 88px auto;
+}
+
+.adress-footer {
+    margin: 0;
+}
+
+.footer__menu {
+    margin: auto;
+}
+
+.footer__menu-list {
+    text-align: center;
+}
+
+.footer__menu-list-item {
+    list-style: none;
+}
+
+.footer__menu-link {
+    text-decoration: none;
+    border-bottom: 1px solid black;
+}
+
+.footer__menu-link_active {
+    text-decoration: none;
+    border-bottom: 0;
+}
+
+.footer__social-list {
+    display: flex;
+    column-gap: 48px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    list-style: none;
+}
+
+.footer__social-link {
+    display: block;
+}
+
+.footer__social-icon  {
+    display: block;
+    max-width: 48px;
+    max-height: 48px;
 }
