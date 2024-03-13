@@ -76,7 +76,6 @@ address a {
     background-position: center;
     color: white;
     display: flex;
-    justify-content: flex-start;
     flex-direction: column;
     position: relative;
     margin-top: 92px;
@@ -99,46 +98,27 @@ address a {
     font-size: 100px;
     display: flex;
     flex-direction: column;
-    row-gap: 20px;
-}
-
-.align-text__left {
-    line-height: 115px;
-}
-
-.align-text__left-l {
-    letter-spacing: 33px;
+    gap: 20px;
+    line-height: 100px;
+    letter-spacing: 30px;
 }
 
 .align-text__center {
+    line-height: 115px;
     text-align: center;
-    padding-right: 61px;
-    line-height: 100px;
-}
-
-.align-text__center-l {
-    letter-spacing: 32px;
 }
 
 .align-text__right {
+    line-height: 115px;
     text-align: right;
-    line-height: 100px;
 }
 
-.align-text__right-l {
-    letter-spacing: 37px;
-}
-
-.align-text__right-c {
-    letter-spacing: 6px;
-}
-
-.align-text__right-r {
-    letter-spacing: 5px;
-}
-
-.align-text__right-end {
+.no-letter-spacing {
     letter-spacing: 0;
+}
+
+.letter-spacing-extended {
+    letter-spacing:60px;
 }
 
 .cover__description {
@@ -147,6 +127,7 @@ address a {
     align-items: center;
     z-index: 2;
 }
+
 .cover__description-text {
     font-size: 22px;
     font-weight: 400;
@@ -155,6 +136,7 @@ address a {
     word-spacing: 18.5px;
     padding-left: 80px;
 }
+
 .bet__button {
     width: 256px;
     height: 51px;
@@ -275,9 +257,7 @@ address a {
     padding-right: 5px;
     display: grid;
     grid-template-columns: 334px 1fr;
-    grid-template-rows: 4, auto;
-    column-gap: 24px;
-    row-gap: 8px;
+    gap: 8px 24px;
 }
 
 .about__logo {
@@ -309,13 +289,10 @@ address a {
     font-weight: 400;
     line-height: 24px;
     padding-bottom: 16px;
-}
-
-.about__text-end {
     grid-column: 2/3;
 }
 
-.about__text-end:last-child {
+.about :last-child {
     padding-bottom: 0;
 }
 
@@ -323,8 +300,8 @@ address a {
 
 .footer {
         width: 1000px;
-        display: flex;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: 1fr max-content 1fr;
         color: rgb(0 0 0 1);
         font-weight: 400;
         font-size: 18px;
@@ -332,6 +309,9 @@ address a {
         margin: 180px auto 88px auto;
 }
 
+.footer :first-child {
+    justify-self: self-start;
+}
 .footer__menu-list {
     text-align: center;
 }
@@ -352,6 +332,7 @@ address a {
 
 .footer__social-list {
     display: flex;
+    justify-self: end;
     column-gap: 48px;
     top: 0;
     right: 0;
