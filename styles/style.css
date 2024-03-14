@@ -71,7 +71,7 @@ address a {
 /* секция "оно тебе надо" */
 
 .cover {
-    background: url(/images/cover.jpg);
+    background: url(../images/cover.jpg);
     background-size: cover;
     background-position: center;
     color: white;
@@ -98,27 +98,30 @@ address a {
     font-size: 100px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    justify-content: space-between;
+    /* gap: 10px; */
     line-height: 100px;
     letter-spacing: 30px;
 }
 
-.align-text__center {
+.letter-spacing-extended {
+    letter-spacing: 60px;
+}
+
+.align-text__left {
     line-height: 115px;
+}
+
+.align-text__center {
     text-align: center;
 }
 
 .align-text__right {
-    line-height: 115px;
     text-align: right;
 }
 
 .no-letter-spacing {
     letter-spacing: 0;
-}
-
-.letter-spacing-extended {
-    letter-spacing:60px;
 }
 
 .cover__description {
@@ -181,8 +184,10 @@ address a {
 }
 
 .lots__card-list-item {
-    position: relative;
+    background-size: cover;
+    background-position: center;
     flex-basis: 334px;
+    position: relative;
     flex-grow: 1;
 }
 
@@ -204,21 +209,15 @@ address a {
 }
 
 .card_type_film {
-    background-image: url(/images/card-lot-01.jpg);
-    background-size: cover;
-    background-position: center;
+    background-image: url(../images/card-lot-01.jpg);
 }
 
 .card_type_book {
-    background-image: url(/images/card-lot-02.jpg);
-    background-size: cover;
-    background-position: center;
+    background-image: url(../images/card-lot-02.jpg);
 }
 
 .card_type_picture {
-    background-image: url(/images/card-lot-03.jpg);
-    background-size: cover;
-    background-position: center;
+    background-image: url(../images/card-lot-03.jpg);
 }
 
 .card__title {
@@ -272,8 +271,8 @@ address a {
 }
 
 .about__logo > img {
-    width: 141.54px;
-    height: 112.55px;
+    width: 62%;
+    height: 56%;
 }
 
 .about__title {
@@ -282,6 +281,7 @@ address a {
     font-weight: 700;
     line-height: 47px;
     align-self: center;
+    padding-top: 10px;
 }
 
 .about__text {
@@ -334,8 +334,6 @@ address a {
     display: flex;
     justify-self: end;
     column-gap: 48px;
-    top: 0;
-    right: 0;
     list-style: none;
 }
 
